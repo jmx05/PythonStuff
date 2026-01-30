@@ -9,7 +9,11 @@
 
 user_prompt = "Enter a task: " #you can save strings in variables and have them printed later
 
+todos = []  #creates an empty list called todos
+#True is a boolean data type
 while True: #under the while condition, everything indented will be repeated infinitely True is True
-    
-    todo = input(user_prompt) 
-    print("You have added the task:", todo)
+
+    todo = input(user_prompt)
+    print(todo.capitalize())  #capitalizes the first letter of the input 
+    todos.append(todo)  #adds the value of todo to the end of the todos list
+    print(todos)  #prints the current list of todos
